@@ -1,20 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 
-//helper functions
-// function root (args){
-//   args = Array.prototype.slice.call(arguments, 0);
-//   return path.join.apply(path, [__dirname].concat('../', ...args));
-// }
-
-
 module.exports = {
-    // entry: './src/index.js',
-    // entry: {
-    //   'app': [
-    //     root('client/app/index.js')
-    //   ]
-    // },
     entry: './client/app/index.js',
     module: {
         rules: [
@@ -26,13 +13,13 @@ module.exports = {
         ]
       },
       resolve: {
-        extensions: ['*', '.js', '.jsx'],
+        extensions: ['*', '.js', '.jsx', '.html', '.css', '.json'],
         alias: {
           'app': 'client/app'
         }
       },
     output: {
-      path: __dirname + '/dist',
+      path: __dirname + './dist',
       publicPath: '/',
       filename: 'bundle.js'
     },
@@ -41,6 +28,7 @@ module.exports = {
       ],
     devServer: {
       contentBase: './dist',
+      historyApiFallback: true,
       hot: true
     }
   };

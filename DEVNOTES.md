@@ -14,4 +14,9 @@
       >> Client and Server have separated folders 
       >> Api folder for custom routes
 
+3/3/2019:
+   > Restructured client folder to contain 'App/components/component.js' structure
+   > React-Router configured and custom url routing with components is functional
+      >> fixed issue with routing. All other paths but first '/' path wouldn't return GET/URL. 
+      >> Adding DevServer: { historyApiFallback: true } to Webpack fixed the problem.
 ```

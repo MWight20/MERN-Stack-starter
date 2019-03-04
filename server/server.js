@@ -8,7 +8,7 @@ const path = require('path');
 // const webpackDevMiddleware = require('webpack-dev-middleware');
 // const webpackHotMiddleware = require('webpack-hot-middleware');
 
-// const config = require('../config/config');
+ const config = require('../config/config');
 // const webpackConfig = require('../webpack.config');
 
 // const isDev = process.env.NODE_ENV !== 'production';
@@ -18,6 +18,7 @@ const port  = process.env.PORT || 8080;
 // Configuration
 // ================================================================================================
 
+// Express
 const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -25,15 +26,17 @@ app.use(bodyParser.json());
 // API routes
 require('./routes')(app);
 
+
 app.use(express.static(path.resolve(__dirname, '../dist')));
   app.get('*', function (req, res) {
     res.sendFile(path.resolve(__dirname, '../dist/index.html'));
     res.end();
 });
 
-app.get('/hello', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });   
-});
+
+// app.get('/hello', function(req, res) {
+//     res.json({ message: 'hooray! welcome to our api!' });   
+// });
 
 
 app.listen(port, (err) => {
@@ -41,7 +44,8 @@ app.listen(port, (err) => {
         console.log(err);
     }
 
-    console.info('>>> Open http://localhost:' + port + ' in your browser.', port);
+    // console.info('>>> Open http://localhost:' + port + ' in your browser.', port);
+    console.info("Backend server started...");
 });
 
 module.exports = app;
