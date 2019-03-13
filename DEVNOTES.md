@@ -1,6 +1,9 @@
 ## DEVNOTES & Edit Log
 
 ```
+3/12/2019:
+   > css-loader configured: Can aquire css stylesheets correctly within index.js
+
 3/1/2019:
 
    > Webpack and Babel installed and configured for app

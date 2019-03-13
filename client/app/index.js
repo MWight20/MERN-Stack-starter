@@ -21,17 +21,7 @@ import NotFound from './components/App/NotFound';
 import Home from './components/Home/Home';
 import Helloworld from './components/Helloworld/Helloworld';
 
-
-// const title = 'MERN boilerplate.';
-
-// ReactDOM.render((
-//   <div>{title}
-//     <p>Here is some sample text FROM CLIENT APP INDEX</p>
-//   </div>
-//   ), document.getElementById('app')
-// );
-
-// module.hot.accept();
+import './styles/style.css';
 
 render((
   <Router>
