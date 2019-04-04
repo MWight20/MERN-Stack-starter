@@ -1,11 +1,11 @@
 # MERN-boilerplate
-MERN boilerplate code (WiP) to use for Full-Stack React JavaScript web projects
+A MERN boilerplate code/starting template to use for Full-Stack React JavaScript web projects
 
 This boilerplate code is configured with: 
  - [React.js]
  - [Webpack]
  - [Babel]
- - [Express]
+ - [Express.js]
   
 ## Requirements
 

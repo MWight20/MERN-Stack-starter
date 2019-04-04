@@ -14,9 +14,13 @@ class Home extends Component {
 
     render() {
         return(
-            <div>
-                <h1> Home </h1>
-                <p> Welcome to the 'Home' page!</p>
+            <div className="container">
+                <div className="header">
+                    <h1> Welcome to the landing page!</h1>
+                </div>
+                <div className="content">
+                    <p> Put content here: </p>
+                </div>
             </div>
         );
     }

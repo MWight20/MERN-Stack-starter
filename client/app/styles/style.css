@@ -1,3 +1,16 @@
-p {
-    color: red;
+body {
+    background: lightcyan;
+}
+
+.header {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.content p {
+    font-size: 30px
 }

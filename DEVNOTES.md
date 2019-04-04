@@ -1,6 +1,16 @@
 ## DEVNOTES & Edit Log
-
 ```
+4/1/2019 -> 4/4/2019:
+   > 4/1 -> Added 'request' npm package to code functionality for server api and client fetch calls
+
+   > 4/1-4/3 -> Wrote and tested code to run API over backend
+      >> Server and client both working serparately, however not communicating properly. 
+      >> Client only receives index.html instead of intended JSON from server.
+
+   > 4/4 -> Resolved issue regarding failure to communicate between server and client -- NOW WORKS!
+      >> Problem lied in the webpack.config.js script: proxy was not in place for the server api
+      >> Resulted in a lack of a communication bridge between Express server and React client.
+
 3/12/2019:
    > css-loader configured: Can aquire css stylesheets correctly within index.js
 
