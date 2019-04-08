@@ -35,4 +35,11 @@ How to connect a MySQL database:
         -> connection.connect() 
         -> query via api function
 
+If no Database is to be used, locate '.server/routes/api/mysqlExample.js' and either:
+    >> delete 'mysqlExample.js' 
+    
+    or
+
+    >> comment out everything in 'mysqlExample.js'
+
 ```
