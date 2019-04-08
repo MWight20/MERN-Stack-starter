@@ -1,7 +1,12 @@
 {
-  "name": "MERN-boilerplate",
+  "name": "MERN-stack starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "MERN stack starter",
+  "author": "Michael Wight",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MWight20/MERN-Stack-starter.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +15,7 @@
     "start": "concurrently --kill-others-on-fail \"npm run webpack\" \"npm run server\""
   },
   "keywords": [],
-  "author": "",
+  
   "license": "ISC",
   "babel": {
     "presets": [
@@ -32,6 +37,7 @@
   "dependencies": {
     "css-loader": "^2.1.1",
     "express": "^4.16.4",
+    "mysql": "^2.16.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1",

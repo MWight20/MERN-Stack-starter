@@ -4,5 +4,10 @@
 
 //This file must be recreated or renamed to config.js to be properly configured (due to .gitignore)
 module.exports = {
-    db: ''
+    conn: {
+        host: 'host',
+        user: 'user',
+        password : 'password',
+        database : 'database'
+    }
 }

@@ -1,5 +1,9 @@
 ## DEVNOTES & Edit Log
 ```
+4/7/2019:
+   > Configured stack template for mysql DB use
+   > Tested DB connection -> success!
+
 4/1/2019 -> 4/4/2019:
    > 4/1 -> Added 'request' npm package to code functionality for server api and client fetch calls
 

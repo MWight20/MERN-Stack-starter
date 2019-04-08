@@ -1,8 +1,6 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const path = require('path');
-
- const config = require('../config/config.sample');
 const port  = process.env.PORT || 8080;
 
 
