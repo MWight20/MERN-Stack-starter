@@ -29,7 +29,8 @@ How to connect a MySQL database:
 - config.js should export a js object that contains connection information. 
     -(example file located  './config/config.sample.js')
 
-- in 'server/routes/api/' create a js file to make your sql database call.     -(example of db connection in 'server/routes/mysql.js')
+- in 'server/routes/api/' create a js file to make your sql database call.     
+    -(example of db connection in 'server/routes/mysql.js')
         -> create connection variable 
         -> connection.connect() 
         -> query via api function

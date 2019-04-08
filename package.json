@@ -1,5 +1,5 @@
 {
-  "name": "MERN-stack starter",
+  "name": "MERN-stack-starter",
   "version": "1.0.0",
   "description": "MERN stack starter",
   "author": "Michael Wight",
@@ -15,7 +15,6 @@
     "start": "concurrently --kill-others-on-fail \"npm run webpack\" \"npm run server\""
   },
   "keywords": [],
-  
   "license": "ISC",
   "babel": {
     "presets": [
